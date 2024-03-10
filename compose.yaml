@@ -1,0 +1,14 @@
+services:
+  tg-tw:
+    build: .
+    command:
+      - -token
+      - $TOKEN
+      - -api
+      - $API
+    cpus: "0.05"
+    mem_limit: "50M"
+    network_mode: "host"
+    environment:
+      - TOKEN
+      - API
